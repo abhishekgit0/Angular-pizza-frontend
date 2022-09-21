@@ -1,0 +1,157 @@
+.login-box {
+  position: absolute;
+  top: 95%;
+  left: 70%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(48, 47, 47, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color:antiquewhite;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+
+.login-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+.btn{
+  height: 15px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container{
+  height: 400px;
+  width: 400px;
+  background-color: antiquewhite;
+  position: absolute;
+  top:50%;
+  left:10%;
+  background: rgba(70, 70, 71, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+
+}
+.email{
+  background-image: url("../../../assets/pic/email.png");
+  height: 96px;
+  width: 96px;
+}
+.phone{
+  background-image: url("../../../assets/pic/phone.png");
+  height: 96px;
+  width: 96px;
+}
+.address{
+  background-image: url("../../../assets/pic/marker.png");
+  background-repeat: no-repeat;
+  height: 96px;
+  width: 96px;
+}
+.instagram{
+  background-image: url("../../../assets/pic/insta.png");
+  height: 96px;
+  width: 96px;
+}
+.text1{
+  position: absolute;
+  left:100px;
+  top:20px;
+}
+.text2{
+  position: absolute;
+  left: 100px;
+  top:120px;
+}
+.text3{
+  position: absolute;
+  left: 100px;
+  top:210px;
+} 
+.text4{
+  position: absolute;
+  left:95px;
+  top:310px;
+}
+h5{
+  color: #fff;
+}
+.title{
+  text-align: center;
+  color: #fff;
+}
+i{
+  color: antiquewhite;
+}
+.main-container{
+  background-image: url("../../../assets/pic/login.jpg");
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}

@@ -1,0 +1,45 @@
+.card-text{
+  height: 180px;
+  width: 260px;
+  background-image: url("../../../assets/pic/small.jpg");
+  background-repeat: no-repeat;
+  
+}
+.card{
+  margin: 10px;
+  border-radius:8%;
+}
+.card-body{
+  height: 300px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.card:hover{
+  box-shadow: 2px 2px 2px black;
+}
+.card-title,.card-footer{
+  color:black;
+  text-align: center;
+}
+.discount{
+  margin-top: 20px;
+  color:hsl(100,50%, 50%);
+}
+h1{
+  color:hsl(100,50%, 50%);
+  text-align: center;
+  margin:10px;
+  padding: 10px;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  background-image: url("../../../assets/pic/72.jpg");
+}
+
+.card:hover{
+  transform: translateY(-20px);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.7);
+
+}

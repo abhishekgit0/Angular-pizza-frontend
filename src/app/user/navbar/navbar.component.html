@@ -1,0 +1,25 @@
+<div class="top-container">
+    <h1>Pizza Hub</h1>
+</div>
+<nav class="navbar navbar-expand sticky-top">
+    <div class="container">
+        <ul class="navbar-nav">
+            <div class="cart"><a [routerLink]="['/cart']"></a></div>
+            <li class="nav-item">
+                <a [routerLink]="['/userhome']" class="nav-link active">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/myprofile']" class="nav-link active">MYPROFILE</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/useroffer']" class="nav-link active">OFFERS</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/userfeedback']" class="nav-link active">FEEDBACK</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/']" class="nav-link active">LOGOUT</a>
+            </li>
+        </ul>
+    </div>
+</nav>

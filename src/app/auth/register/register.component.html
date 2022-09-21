@@ -1,0 +1,46 @@
+<div class="main-container">
+  <div class="login-box">
+      <h2>Registration Info</h2>
+      <p></p>
+      <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+          <div class="user-box">
+            <input class="input--style-3" type="text" placeholder="Name" name="name" autocomplete="off" ngModel required #name="ngModel">
+              <label for="name">Name</label>
+          </div>
+          <div class="user-box">
+            <input class="input--style-3" type="email" placeholder="Email" name="email" autocomplete="off" ngModel email
+            required #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+              <label for="email">Email</label>
+          </div>
+          <div class="user-box">
+            <input class="input--style-3" type="text" placeholder="Phone" name="contact"
+            pattern="^(\+91[\-\s]?)?[0]?(91)?[789]\d{9}$" autocomplete="off" ngModel required #contact="ngModel">
+              <label for="phone">Phone</label>
+          </div>
+          <div class="user-box">
+            <input class="input--style-3" type="password" placeholder="Enter password" name="p1" id="p1"
+                  autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="Plaese enter valid and strong password" ngModel required #p1="ngModel">
+              <label for="pass">Password</label>
+          </div>
+          <div class="user-box">
+            <input class="input--style-3" type="password" placeholder="Re-enter password" name="p2" id="p2"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Plaese enter valid and strong password"
+            autocomplete="off" ngModel required #p2="ngModel">
+              <label for="re-pass">Re-Enter Password</label>
+          </div>
+          <button class="btn btn--pill btn--green" [disabled]="f.invalid" type="submit">Register</button>
+          <button class="btn btn--pill btn--green" style="margin-left: 10px;" type="reset">Reset</button>
+      </form>
+
+
+      <div class="niche">
+        <!-- <center> -->
+          <a [routerLink]="['/']"><i class="fa fa-arrow-circle-left" aria-hidden="true" style="color:white;">
+              Goback</i></a>
+          <a></a>
+          <a [routerLink]="['/login']"  id="fp">Login?</a>
+        <!-- </center> -->
+      </div>
+  </div>
+</div>

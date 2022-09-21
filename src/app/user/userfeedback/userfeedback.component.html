@@ -1,0 +1,46 @@
+<body>
+    <app-navbar></app-navbar>
+  
+<div class="main-container">
+  <div class="title"><h1>Contact Us & Feedback</h1></div>
+  <div class="contact-container">
+      <div class="address"></div>
+      <div class="email"></div>
+      <div class="phone"></div>
+      <div class="instagram"></div>
+      <div class="text1">
+          <h5>Address</h5>
+          <i>Paschim Vihar,Delhi-110041</i>
+      </div>
+      <div class="text2">
+          <h5>Email</h5>
+          <i>abhishek@gmail.com</i>
+      </div>
+      <div class="text3">
+          <h5>Phone</h5>
+          <i>8826487928</i>
+      </div>
+      <div class="text4">
+          <h5>Instagram</h5>
+          <i>@abhishek.00010</i>
+      </div>
+  </div>
+  <div class="login-box">
+      <h2>Send Message</h2>
+      <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+          <div class="user-box">
+            <input type="text" name="name"  placeholder="Enter your name" ngModel required #name="ngModel"  autocomplete="off">
+          </div>
+          <div class="user-box">
+            <input type="text" name="email"  placeholder="Enter your email" ngModel required #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  autocomplete="off">
+          </div>
+          <div class="user-box">
+            <textarea name="msg" id="" cols="" rows="" placeholder="Enter your message"ngModel required #msg="ngModel"  autocomplete="off"></textarea>
+          </div>
+          <div class="btn">
+            <input type="submit" name="" [disabled]="f.invalid" value="submit" required="required">
+          </div>
+      </form>
+  </div>
+</div>
+</body>
