@@ -1,55 +1,110 @@
-.nav-item {
-  padding: 3px;
-  
-}
-.nav-item a{
-  color: antiquewhite;
-}
-a,h1{
-  font-family:'Times New Roman', Times, serif ;
-}
-.nav-item:hover{
-  text-shadow: 2px 2px 2px whitesmoke;
-}
-.navbar{
-  background-color: hsl(100,90%,10%);
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.top-container{
-  background-color: hsl(400,20%,60%);
-  width: 100%;
-  height: 70px;
-  color: black;
-  text-align: center;
-  padding: 10px;
+body {
+  background-color: #fff;
 }
-.top-container{
-  animation: glow 2.5s ease-in-out  infinite alternate ;
+
+/* navbar  */
+nav{
+  box-shadow: 0 0px 18px 4px rgba(0,0 , 0, 0.719);
+
 }
-@keyframes glow {
-  0%{
-      color:black;
-      text-shadow: 1px 1px 5px whitesmoke;
-  }
-  100%{
-  text-shadow: 2px 2px 5px red;
-  color: whitesmoke;
-  }
-  
+.navbar ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
 }
-.cart a{
-  background-image: url("../../../assets/pic/cart.png");  
-  height: 75px;
-  width: 75px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.navbar ul li{
+  display: inline-flex;
+
+}
+.navbar ul li a{
+  position: relative;
+  padding: 16px 0 5px;
+  margin: 0 25px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Audiowide' ,cursive;
+  font-size: 16px;
+}
+.navbar ul li a:hover{
+  color: tomato;
+  transition: .4s;
+}
+.navbar ul li a:after{
+  content: '';
   position: absolute;
-  right: 30px;
-  top:-20px;
+
+  bottom: 0;
+
+  transform: translateX(-100%) scaleX(0);
+  -webkit-transform: translateX(-100%) scaleX(0);
+
+
+  -webkit-transform-origin:50% 50%;
+  transform-origin: 50% 50%;
+
+
+  width: 100%;
+  height: 2px;
+
+  background-color: rgba(187, 187, 187, 0.9);
+
+  -webkit-transition: transform 250ms;
+  transition: transform 250ms;
+}
+.navbar ul li a:hover:after{
+  -webkit-transform: translateX(-100%) scaleX(1);
+
+  transform: translateX(-100%) scaleX(1);
+}
+
+
+
+
+
+/* cart iconnnn */
+#ct{
+  font-size:48px;
+  color:white;
+  padding-left: 7px;
+  transition: 0.3s all ease-in;
+}
+#ct:hover{
+  color: tomato;
+}
+
+.rs{
+  margin-left: 20px;
 
 }
-.container{
-  padding: 0px;
-  margin-left: 10px;
+.bt{
+  padding-right: 20px;
+}
+
+.notification {
+  /* background-color: #555; */
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  position: relative;
+  display: inline-block;
+}
+
+
+.notification .badge {
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 100%;
+  background-color: red;
+  color: white;
 }
